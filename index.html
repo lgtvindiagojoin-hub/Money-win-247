@@ -3,390 +3,402 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>क्रिकेट खेलो - 10% बोनस पाओ | MoneyWin247</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>🏏 IPL 2025 | Moneywin247 | 10% INSTANT BONUS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
         body {
             font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 50%, #1e293b 100%);
-            min-height: 100vh;
+            background: linear-gradient(135deg, #0c0c0c 0%, #1a1a2e 50%, #16213e 100%);
+            color: #fff;
             overflow-x: hidden;
-            color: white;
+            position: relative;
         }
 
-        .cricket-bg {
+        .stars {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            z-index: -1;
-            opacity: 0.1;
+            pointer-events: none;
+            z-index: 1;
+        }
+        .star {
+            position: absolute;
+            background: #fff;
+            border-radius: 50%;
+            animation: twinkle 3s infinite;
+        }
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.3; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.2); }
         }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
+        .container { max-width: 1300px; margin: 0 auto; padding: 20px; position: relative; z-index: 10; }
 
         .header {
             text-align: center;
+            padding: 40px 0;
+            background: rgba(255,255,255,0.03);
+            backdrop-filter: blur(20px);
+            border-radius: 30px;
             margin-bottom: 40px;
+            border: 1px solid rgba(255,255,255,0.1);
         }
-
-        .logo {
+        .ipl-logo { font-size: 4rem; margin-bottom: 20px; }
+        .main-title {
+            font-family: 'Orbitron', sans-serif;
             font-size: 3.5rem;
             font-weight: 800;
-            background: linear-gradient(135deg, #ffd700, #ff6b35, #00d4ff);
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #f9ca24);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
             margin-bottom: 20px;
-            text-shadow: 0 0 30px rgba(255,215,0,0.5);
+            text-shadow: 0 0 30px rgba(255,255,255,0.5);
         }
-
-        .tagline {
-            font-size: 1.4rem;
-            opacity: 0.9;
-            margin-bottom: 10px;
-        }
-
-        .live-match {
-            background: linear-gradient(135deg, #059669, #047857);
-            padding: 15px 25px;
-            border-radius: 50px;
+        .brand-tag {
+            background: linear-gradient(45deg, #0088cc, #00aaff);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
             display: inline-block;
-            font-weight: 600;
-            animation: pulse 2s infinite;
-            margin-bottom: 30px;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin: 15px 0;
+            box-shadow: 0 10px 25px rgba(0,136,204,0.3);
         }
 
-        @keyframes pulse {
-            0% { box-shadow: 0 0 0 0 rgba(5,150,105,0.7); }
-            70% { box-shadow: 0 0 0 20px rgba(5,150,105,0); }
-            100% { box-shadow: 0 0 0 0 rgba(5,150,105,0); }
-        }
-
-        .main-promo {
-            background: linear-gradient(135deg, #8b5cf6, #a855f7, #ec4899);
-            padding: 40px;
-            border-radius: 25px;
-            text-align: center;
-            margin-bottom: 40px;
-            box-shadow: 0 25px 50px rgba(139,92,246,0.4);
+        .mega-bonus {
+            background: linear-gradient(45deg, #ff416c, #ff4b2b);
+            color: white;
+            padding: 25px 60px;
+            border: none;
+            border-radius: 50px;
+            font-size: 28px;
+            font-weight: 700;
+            display: inline-block;
+            margin: 20px 0;
+            cursor: pointer;
+            box-shadow: 0 20px 40px rgba(255,65,108,0.4);
+            transition: all 0.3s ease;
+            text-decoration: none;
             position: relative;
             overflow: hidden;
         }
-
-        .main-promo::before {
+        .mega-bonus:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 30px 60px rgba(255,65,108,0.6);
+        }
+        .mega-bonus::before {
             content: '';
             position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: repeating-conic-gradient(from 0deg, transparent, transparent 10px, rgba(255,255,255,0.1) 10px, rgba(255,255,255,0.1) 20px);
-            animation: spin 20s linear infinite;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+            transition: left 0.5s;
         }
+        .mega-bonus:hover::before { left: 100%; }
 
-        @keyframes spin {
-            100% { transform: rotate(360deg); }
+        .telegram-mega {
+            background: linear-gradient(45deg, #0088cc, #00aaff, #229ed9);
+            box-shadow: 0 20px 40px rgba(0,136,204,0.5);
         }
+        .telegram-mega:hover { box-shadow: 0 30px 60px rgba(0,136,204,0.7); }
 
-        .bonus-badge {
-            font-size: 3rem;
-            font-weight: 800;
-            margin-bottom: 20px;
-            text-shadow: 0 0 20px rgba(255,255,255,0.5);
+        .whatsapp-mega {
+            background: linear-gradient(45deg, #25D366, #20ba5a);
+            box-shadow: 0 20px 40px rgba(37,211,102,0.4);
         }
+        .whatsapp-mega:hover { box-shadow: 0 30px 60px rgba(37,211,102,0.6); }
 
-        .play-options {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-            margin: 40px 0;
-        }
-
-        .play-card {
-            background: rgba(255,255,255,0.1);
-            backdrop-filter: blur(20px);
-            padding: 30px;
-            border-radius: 20px;
-            border: 2px solid rgba(255,255,255,0.2);
+        .matches-section { margin: 60px 0; }
+        .section-title {
+            font-size: 2.5rem;
             text-align: center;
-            transition: all 0.3s ease;
-            cursor: pointer;
+            margin-bottom: 40px;
+            background: linear-gradient(45deg, #00f5ff, #ff00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .matches-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 30px;
+        }
+        .match-card {
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(25px);
+            border-radius: 25px;
+            padding: 35px;
+            border: 1px solid rgba(255,255,255,0.15);
+            transition: all 0.4s ease;
             position: relative;
             overflow: hidden;
         }
-
-        .play-card::before {
+        .match-card::before {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
             height: 4px;
-            background: linear-gradient(90deg, #ffd700, #ff6b35, #00d4ff);
+            background: linear-gradient(90deg, #ff6b6b, #4ecdc4, #f9ca24);
         }
-
-        .play-card:hover {
+        .match-card:hover {
             transform: translateY(-15px);
-            background: rgba(255,255,255,0.2);
-            border-color: #ffd700;
-            box-shadow: 0 30px 60px rgba(255,215,0,0.3);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+            border-color: rgba(255,255,255,0.3);
         }
-
-        .play-icon {
-            font-size: 4rem;
+        .match-teams { font-size: 2rem; font-weight: 700; margin-bottom: 15px; }
+        .match-date { 
+            font-size: 1.4rem; 
+            color: #4ecdc4; 
+            font-weight: 600;
             margin-bottom: 20px;
-            display: block;
         }
-
-        .play-title {
-            font-size: 1.6rem;
-            font-weight: 700;
-            margin-bottom: 15px;
-        }
-
-        .play-desc {
-            opacity: 0.9;
-            margin-bottom: 25px;
-        }
-
-        .join-btn {
-            background: linear-gradient(135deg, #ffd700, #ff6b35);
-            color: #1e293b;
-            padding: 18px 35px;
-            border-radius: 50px;
-            font-size: 1.2rem;
-            font-weight: 700;
-            text-decoration: none;
-            display: inline-block;
-            box-shadow: 0 15px 35px rgba(255,215,0,0.4);
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .join-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 25px 50px rgba(255,215,0,0.6);
-            color: #1e293b;
-        }
-
-        .join-btn:active {
-            transform: translateY(-1px);
-        }
-
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 20px;
-            margin: 50px 0;
-        }
-
-        .feature {
+        .match-features {
             display: flex;
-            align-items: center;
             gap: 15px;
-            padding: 20px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
-        }
-
-        .feature-icon {
-            font-size: 1.8rem;
-            width: 50px;
-            height: 50px;
-            background: linear-gradient(135deg, #ffd700, #ff6b35);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #1e293b;
-            font-weight: bold;
-        }
-
-        .trust-badges {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 40px;
+            margin-top: 20px;
             flex-wrap: wrap;
         }
-
-        .badge {
-            background: rgba(255,255,255,0.2);
-            padding: 12px 20px;
-            border-radius: 25px;
+        .feature-tag {
+            background: rgba(255,255,255,0.15);
+            padding: 8px 16px;
+            border-radius: 20px;
             font-size: 0.9rem;
             font-weight: 600;
         }
 
-        @media (max-width: 768px) {
-            .logo {
-                font-size: 2.5rem;
-            }
-            
-            .play-options {
-                grid-template-columns: 1fr;
-            }
-            
-            .container {
-                padding: 15px;
-            }
+        .social-section {
+            text-align: center;
+            padding: 60px 0;
+            background: rgba(255,255,255,0.02);
+            backdrop-filter: blur(20px);
+            border-radius: 30px;
+            margin: 60px 0;
+            border: 1px solid rgba(255,255,255,0.1);
         }
-
-        .whatsapp-float {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 60px;
-            height: 60px;
-            background: #25D366;
-            border-radius: 50%;
+        .social-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .social-btn {
             display: flex;
             align-items: center;
-            justify-content: center;
-            font-size: 1.8rem;
-            box-shadow: 0 10px 30px rgba(37,211,102,0.5);
-            z-index: 1000;
+            gap: 15px;
+            padding: 22px 35px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.2rem;
             transition: all 0.3s ease;
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+        .social-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            transition: left 0.5s;
+            background: rgba(255,255,255,0.2);
+        }
+        .social-btn:hover::before { left: 100%; }
+
+        .whatsapp-social { 
+            background: linear-gradient(45deg, #25D366, #20ba5a); 
+            color: white; 
+            box-shadow: 0 15px 35px rgba(37,211,102,0.4);
+        }
+        .whatsapp-social:hover { 
+            transform: translateY(-5px);
+            box-shadow: 0 25px 50px rgba(37,211,102,0.6);
         }
 
-        .whatsapp-float:hover {
-            transform: scale(1.1);
+        .telegram-social { 
+            background: linear-gradient(45deg, #0088cc, #00aaff, #229ed9); 
+            color: white; 
+            box-shadow: 0 15px 35px rgba(0,136,204,0.5);
+            animation: telegramPulse 2s infinite;
         }
+        @keyframes telegramPulse {
+            0%, 100% { box-shadow: 0 15px 35px rgba(0,136,204,0.5); }
+            50% { box-shadow: 0 15px 35px rgba(0,136,204,0.8); }
+        }
+        .telegram-social:hover { 
+            transform: translateY(-5px);
+            box-shadow: 0 25px 50px rgba(0,136,204,0.7);
+        }
+
+        .insta-social { 
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); 
+            color: white; 
+            box-shadow: 0 15px 35px rgba(255,108,89,0.4);
+        }
+        .insta-social:hover { 
+            transform: translateY(-5px);
+            box-shadow: 0 25px 50px rgba(255,108,89,0.6);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 60px 0;
+        }
+        .feature-card {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: all 0.3s ease;
+        }
+        .feature-card:hover {
+            background: rgba(255,255,255,0.1);
+            transform: translateY(-10px);
+        }
+        .feature-icon { font-size: 3rem; margin-bottom: 20px; }
+
+        @media (max-width: 768px) {
+            .main-title { font-size: 2.5rem; }
+            .mega-bonus { font-size: 22px; padding: 20px 40px; }
+            .matches-grid { grid-template-columns: 1fr; }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        .header { animation: float 6s ease-in-out infinite; }
     </style>
 </head>
 <body>
-    <div class="cricket-bg">
-        <svg viewBox="0 0 100 100" style="width:100%;height:100%;">
-            <circle cx="20" cy="20" r="3" fill="#ffd700"/>
-            <circle cx="80" cy="40" r="2" fill="#ff6b35"/>
-            <circle cx="40" cy="80" r="4" fill="#00d4ff"/>
-        </svg>
-    </div>
+    <div class="stars" id="stars"></div>
 
     <div class="container">
+        <!-- 🔥 PREMIUM HEADER 🔥 -->
         <div class="header">
-            <h1 class="logo">🏏 MoneyWin247</h1>
-            <p class="tagline">क्रिकेट मैच पर बेटिंग - जीतो लाखों!</p>
-            <div class="live-match">
-                <i class="fas fa-circle"></i> LIVE: IND vs AUS - अभी खेल रहे हैं
+            <div class="ipl-logo">
+                <i class="fas fa-trophy" style="color: #ffd700; text-shadow: 0 0 20px #ffd700;"></i>
+            </div>
+            <h1 class="main-title">IPL 2025 LIVE BETTING</h1>
+            <div class="brand-tag">
+                <i class="fab fa-telegram-plane"></i> Moneywin247 Official
+            </div>
+            <a href="https://wa.me/+447400760142?text=🚀%20Moneywin247%20IPL%2010%25%20BONUS%20JOIN%20करना%20है%20🏏" 
+               class="mega-bonus whatsapp-mega" target="_blank">
+                <i class="fas fa-gift"></i> 10% INSTANT BONUS <i class="fas fa-bolt"></i>
+            </a>
+            <p style="font-size: 1.3rem; opacity: 0.9; margin-top: 15px;">
+                ⚡ 10 Min Withdrawal | Premium Odds | Moneywin247 Safe Betting
+            </p>
+        </div>
+
+        <!-- 📅 LIVE MATCHES -->
+        <div class="matches-section">
+            <h2 class="section-title">🔥 TODAY'S LIVE MATCHES 🔥</h2>
+            <div class="matches-grid">
+                <div class="match-card">
+                    <div class="match-teams">🦁 CSK vs MI 💙</div>
+                    <div class="match-date">
+                        <i class="fas fa-calendar-alt"></i> 22 मार्च 2025 | 7:30 PM IST
+                    </div>
+                    <div class="match-features">
+                        <span class="feature-tag">Live Session</span>
+                        <span class="feature-tag">Moneywin247 Rates</span>
+                        <span class="feature-tag">High Returns</span>
+                    </div>
+                </div>
+                <div class="match-card">
+                    <div class="match-teams">🔴 RCB vs GT 💜</div>
+                    <div class="match-date">
+                        <i class="fas fa-calendar-alt"></i> 24 मार्च 2025 | 7:30 PM IST
+                    </div>
+                    <div class="match-features">
+                        <span class="feature-tag">Live Streaming</span>
+                        <span class="feature-tag">Instant Payout</span>
+                        <span class="feature-tag">VIP Odds</span>
+                    </div>
+                </div>
+                <div class="match-card">
+                    <div class="match-teams">🟡 KKR vs PBKS 🔴</div>
+                    <div class="match-date">
+                        <i class="fas fa-calendar-alt"></i> 26 मार्च 2025 | 7:30 PM IST
+                    </div>
+                    <div class="match-features">
+                        <span class="feature-tag">Match Winner</span>
+                        <span class="feature-tag">24/7 Live Support</span>
+                        <span class="feature-tag">Premium Rates</span>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="main-promo">
-            <div class="bonus-badge">🎁 10% वेलकम बोनस</div>
-            <h2 style="font-size: 2rem; margin-bottom: 20px;">पहली डिपॉजिट पर तुरंत 10% एक्स्ट्रा!</h2>
-            <p style="font-size: 1.2rem; opacity: 0.95;">₹1000 डालो → ₹1100 खेलो → लाखों जीतो!</p>
+        <!-- ⭐ PREMIUM FEATURES -->
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon" style="color: #ff6b6b;">💰</div>
+                <h3>10% Welcome Bonus</h3>
+                <p>First deposit पर instant bonus</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon" style="color: #4ecdc4;">⚡</div>
+                <h3>10 Min Withdrawal</h3>
+                <p>तुरंत पैसे withdraw करें</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon" style="color: #0088cc;">📱</div>
+                <h3>Moneywin247 Channel</h3>
+                <p>Live updates & hot tips</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon" style="color: #f9ca24;">🔒</div>
+                <h3>100% Safe & Secure</h3>
+                <p>Complete privacy guaranteed</p>
+            </div>
         </div>
 
-        <div class="play-options">
-            <div class="play-card">
-                <div class="play-icon">🏏</div>
-                <div class="play-title">क्रिकेट खेलो</div>
-                <div class="play-desc">IPL, T20, ODI - सभी मैच Live!</div>
-                <a href="https://t.me/Moneywin247" class="join-btn" target="_blank">
-                    <i class="fab fa-telegram"></i> अभी खेलो
+        <!-- 🚀 SOCIAL CONNECT - DIRECT LINKS -->
+        <div class="social-section">
+            <h2 style="font-size: 2.8rem; margin-bottom: 50px; background: linear-gradient(45deg, #00f5ff, #ff00ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                📲 Moneywin247 से तुरंत Connect करें
+            </h2>
+            <div class="social-grid">
+                <a href="https://wa.me/+447400760142?text=Hi%20Moneywin247%20Team%2C%20IPL%202025%20Premium%20Betting%20JOIN%20करना%20है%20%F0%9F%8F%8F%2010%25%20BONUS!" 
+                   class="social-btn whatsapp-social" target="_blank">
+                    <i class="fab fa-whatsapp fa-2x"></i>
+                    <strong>WhatsApp Support</strong><br>
+                    <small>10 Sec Reply</small>
+                </a>
+                
+                <a href="https://t.me/Moneywin247" class="social-btn telegram-social" target="_blank">
+                    <i class="fab fa-telegram-plane fa-2x"></i>
+                    <strong>Moneywin247 Channel</strong><br>
+                    <small>Live Updates</small>
+                </a>
+                
+                <a href="https://www.instagram.com/moneywin247online.book?igsh=OHZuNDdmZGkyaWVw" 
+                   class="social-btn insta-social" target="_blank">
+                    <i class="fab fa-instagram fa-2x"></i>
+                    <strong>Instagram Official</strong><br>
+                    <small>Daily Tips</small>
                 </a>
             </div>
-
-            <div class="play-card">
-                <div class="play-icon">🎰</div>
-                <div class="play-title">कैसिनो खेलो</div>
-                <div class="play-desc">Slots, Teen Patti, Andar Bahar</div>
-                <a href="https://t.me/Moneywin247" class="join-btn" target="_blank">
-                    <i class="fab fa-telegram"></i> कैसिनो जॉइन
-                </a>
-            </div>
         </div>
 
-        <div class="features">
-            <div class="feature">
-                <div class="feature-icon">⚡</div>
-                <div>
-                    <div style="font-weight: 600;">तुरंत विथड्रॉ</div>
-                    <div style="font-size: 0.9rem; opacity: 0.8;">5 मिनट में पैसे</div>
-                </div>
-            </div>
-            <div class="feature">
-                <div class="feature-icon">📱</div>
-                <div>
-                    <div style="font-weight: 600;">मोबाइल ऐप</div>
-                    <div style="font-size: 0.9rem; opacity: 0.8;">Android/iOS</div>
-                </div>
-            </div>
-            <div class="feature">
-                <div class="feature-icon">🎁</div>
-                <div>
-                    <div style="font-weight: 600;">डेली बोनस</div>
-                    <div style="font-size: 0.9rem; opacity: 0.8;">रोज़ 10% कैशबैक</div>
-                </div>
-            </div>
-            <div class="feature">
-                <div class="feature-icon">🏆</div>
-                <div>
-                    <div style="font-weight: 600;">IPL स्पेशल</div>
-                    <div style="font-size: 0.9rem; opacity: 0.8;">डबल बोनस</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="trust-badges">
-            <div class="badge">🔒 SSL सुरक्षित</div>
-            <div class="badge">📈 1 लाख+ यूज़र्स</div>
-            <div class="badge">⭐ 4.8 रेटिंग</div>
-            <div class="badge">₹24Cr+ पेमेंट</div>
-        </div>
-    </div>
-
-    <a href="https://t.me/Moneywin247" class="whatsapp-float" target="_blank" title="MoneyWin247 जॉइन करें">
-        <i class="fab fa-telegram-plane"></i>
-    </a>
-
-    <script>
-        // Smooth scroll and animations
-        document.querySelectorAll('.play-card, .join-btn').forEach(card => {
-            card.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-15px) scale(1.02)';
-            });
-            
-            card.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0) scale(1)';
-            });
-        });
-
-        // Live match counter
-        let count = 0;
-        setInterval(() => {
-            count = (count + 1) % 60;
-            const minutes = Math.floor(count / 60);
-            const seconds = count % 60;
-        }, 1000);
-
-        // Auto-click tracking
-        document.querySelectorAll('a[href="https://t.me/Moneywin247"]').forEach(link => {
-            link.addEventListener('click', function() {
-                console.log('🎯 MoneyWin247 join clicked!');
-                // Add your analytics here
-            });
-        });
-    </script>
-</body>
-</html>
+        <!-- 🎯 FINAL CALL TO ACTION -->
+        <div style="text-align: center; padding: 80px 0; background: rgba(
