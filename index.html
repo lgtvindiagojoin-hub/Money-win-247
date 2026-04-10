@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfume Palace - Premium Fragrances</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>Money Win 247 - 100% Genuine Since 2005</title>
     <style>
         * {
             margin: 0;
@@ -13,524 +12,329 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            min-height: 100vh;
+            overflow-x: hidden;
         }
 
-        /* Header */
-        header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 1rem 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
 
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 2rem;
+            padding: 20px;
         }
 
-        .logo {
-            font-size: 1.8rem;
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            animation: fadeInDown 1.5s ease;
+        }
+
+        .main-logo {
+            font-size: 5rem;
+            font-weight: 900;
+            background: linear-gradient(45deg, #FFD700, #FFA500, #FF4500, #FFD700);
+            background-size: 300% 300%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: shine 3s ease-in-out infinite;
+            text-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+            margin-bottom: 15px;
+            letter-spacing: 5px;
+        }
+
+        @keyframes shine {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .tagline {
+            color: white;
+            font-size: 1.4rem;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
             font-weight: bold;
         }
 
-        .nav-links {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-        }
-
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: #ffd700;
-        }
-
-        .cart-icon {
-            position: relative;
-            font-size: 1.5rem;
-            cursor: pointer;
-        }
-
-        .cart-count {
-            position: absolute;
-            top: -8px;
-            right: -8px;
-            background: #ff4757;
-            color: white;
+        /* CBTF 777 Center Logo */
+        .cbtf-hero {
+            width: 180px;
+            height: 180px;
+            margin: 0 auto 50px;
+            background: linear-gradient(135deg, #FF6B35, #F7931E, #FFD23F);
             border-radius: 50%;
-            width: 20px;
-            height: 20px;
-            font-size: 0.8rem;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
+            box-shadow: 
+                0 25px 50px rgba(255,107,53,0.4),
+                inset 0 5px 20px rgba(255,255,255,0.3);
+            animation: float 3s ease-in-out infinite, glow 2s ease-in-out infinite alternate;
+            border: 8px solid rgba(255,255,255,0.3);
         }
 
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23667eea" width="1200" height="600"/><circle fill="%23ffd700" opacity="0.1" cx="300" cy="200" r="200"/><circle fill="%23ff6b9d" opacity="0.1" cx="900" cy="400" r="150"/></svg>');
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
+        .cbtf-hero h2 {
             color: white;
-            margin-top: 70px;
+            font-size: 2.2rem;
+            font-weight: 900;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+            margin-bottom: 5px;
         }
 
-        .hero-content h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1rem;
-            animation: fadeInUp 1s ease;
-        }
-
-        .hero-content p {
-            font-size: 1.3rem;
-            margin-bottom: 2rem;
-            animation: fadeInUp 1s ease 0.2s both;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background: linear-gradient(45deg, #ff6b9d, #ffd700);
+        .cbtf-hero .number {
+            font-size: 3rem;
+            font-weight: 900;
             color: white;
-            padding: 15px 40px;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
-            font-size: 1.1rem;
-            transition: transform 0.3s, box-shadow 0.3s;
-            animation: fadeInUp 1s ease 0.4s both;
+            text-shadow: 3px 3px 10px rgba(0,0,0,0.7);
         }
 
-        .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
         }
 
-        /* Products Section */
-        .products {
-            padding: 100px 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
+        @keyframes glow {
+            from { box-shadow: 0 25px 50px rgba(255,107,53,0.4), inset 0 5px 20px rgba(255,255,255,0.3); }
+            to { box-shadow: 0 25px 50px rgba(255,107,53,0.7), inset 0 5px 20px rgba(255,255,255,0.5); }
         }
 
-        .section-title {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 3rem;
-            color: #333;
-        }
-
-        .products-grid {
+        /* Bonus Cards */
+        .bonuses-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
         }
 
-        .product-card {
-            background: white;
-            border-radius: 20px;
+        .bonus-card {
+            background: rgba(255,255,255,0.95);
+            padding: 35px 25px;
+            border-radius: 25px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            backdrop-filter: blur(15px);
+            border: 2px solid rgba(255,255,255,0.3);
+            transition: all 0.4s ease;
+            position: relative;
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-            cursor: pointer;
         }
 
-        .product-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 50px rgba(0,0,0,0.2);
-        }
-
-        .product-image {
-            height: 250px;
-            background: linear-gradient(45deg, #667eea, #764ba2);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 4rem;
-            color: rgba(255,255,255,0.8);
-        }
-
-        .product-info {
-            padding: 1.5rem;
-        }
-
-        .product-name {
-            font-size: 1.3rem;
-            font-weight: bold;
-            margin-bottom: 0.5rem;
-            color: #333;
-        }
-
-        .product-price {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #ff6b9d;
-            margin-bottom: 1rem;
-        }
-
-        .product-rating {
-            display: flex;
-            gap: 0.2rem;
-            margin-bottom: 1rem;
-        }
-
-        .star {
-            color: #ffd700;
-        }
-
-        .add-to-cart {
-            width: 100%;
-            background: linear-gradient(45deg, #ff6b9d, #ffd700);
-            color: white;
-            border: none;
-            padding: 12px;
-            border-radius: 10px;
-            font-size: 1rem;
-            font-weight: bold;
-            cursor: pointer;
-            transition: transform 0.3s;
-        }
-
-        .add-to-cart:hover {
-            transform: scale(1.05);
-        }
-
-        /* Cart Modal */
-        .cart-modal {
-            display: none;
-            position: fixed;
+        .bonus-card::before {
+            content: '';
+            position: absolute;
             top: 0;
-            left: 0;
+            left: -100%;
             width: 100%;
             height: 100%;
-            background: rgba(0,0,0,0.8);
-            z-index: 2000;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+            transition: left 0.5s;
         }
 
-        .cart-content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+        .bonus-card:hover::before {
+            left: 100%;
+        }
+
+        .bonus-card:hover {
+            transform: translateY(-15px) scale(1.02);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.25);
+        }
+
+        .bonus-icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .bonus-title {
+            font-size: 1.6rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .bonus-desc {
+            color: #7f8c8d;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+
+        /* WhatsApp Section */
+        .whatsapp-hero {
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            padding: 50px 30px;
+            border-radius: 30px;
+            text-align: center;
+            color: white;
+            margin: 50px 0;
+            box-shadow: 0 25px 50px rgba(37,211,102,0.3);
+            animation: pulseSection 2s infinite;
+        }
+
+        @keyframes pulseSection {
+            0% { box-shadow: 0 25px 50px rgba(37,211,102,0.3); }
+            50% { box-shadow: 0 25px 50px rgba(37,211,102,0.5); }
+            100% { box-shadow: 0 25px 50px rgba(37,211,102,0.3); }
+        }
+
+        .whatsapp-hero h2 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 20px;
             background: white;
-            padding: 2rem;
-            border-radius: 20px;
-            max-width: 500px;
-            width: 90%;
-            max-height: 80vh;
-            overflow-y: auto;
-        }
-
-        .close-cart {
-            float: right;
-            font-size: 2rem;
-            cursor: pointer;
-            color: #666;
-        }
-
-        .cart-items {
-            margin: 2rem 0;
-        }
-
-        .cart-total {
+            color: #25D366;
+            padding: 25px 50px;
+            border-radius: 50px;
+            text-decoration: none;
             font-size: 1.5rem;
             font-weight: bold;
-            text-align: center;
-            margin: 1rem 0;
-            color: #ff6b9d;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            margin: 20px 10px;
+            border: 3px solid rgba(255,255,255,0.3);
         }
 
-        .checkout-btn {
-            width: 100%;
-            background: linear-gradient(45deg, #667eea, #764ba2);
-            color: white;
-            border: none;
-            padding: 15px;
-            border-radius: 10px;
-            font-size: 1.1rem;
+        .whatsapp-btn:hover {
+            transform: translateY(-8px) scale(1.05);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+            color: #25D366;
+        }
+
+        .phone-display {
+            font-size: 2.2rem;
             font-weight: bold;
-            cursor: pointer;
+            color: #FFD700;
+            margin: 20px 0;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
         }
 
-        /* Footer */
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 3rem 2rem 1rem;
+        /* Trust Badges */
+        .trust-section {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 40px;
         }
 
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-bottom: 2rem;
+        .trust-badge {
+            background: rgba(255,255,255,0.9);
+            padding: 20px 30px;
+            border-radius: 20px;
+            font-weight: bold;
+            color: #2c3e50;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .trust-badge:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
         }
 
         /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-60px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
-        /* Responsive */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(60px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .bonus-card:nth-child(1) { animation: fadeInUp 1s ease 0.2s both; }
+        .bonus-card:nth-child(2) { animation: fadeInUp 1s ease 0.4s both; }
+        .bonus-card:nth-child(3) { animation: fadeInUp 1s ease 0.6s both; }
+        .bonus-card:nth-child(4) { animation: fadeInUp 1s ease 0.8s both; }
+
         @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-            
-            .hero-content h1 {
-                font-size: 2.5rem;
-            }
+            .main-logo { font-size: 3.5rem; letter-spacing: 2px; }
+            .cbtf-hero { width: 140px; height: 140px; }
+            .cbtf-hero .number { font-size: 2.5rem; }
+            .whatsapp-hero h2 { font-size: 2.2rem; }
+            .phone-display { font-size: 1.8rem; }
+            .bonuses-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <nav>
-            <div class="logo">
-                <i class="fas fa-spray-can"></i> Perfume Palace
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="cart-icon" onclick="toggleCart()">
-                <i class="fas fa-shopping-cart"></i>
-                <span class="cart-count" id="cartCount">0</span>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>Premium Fragrances</h1>
-            <p>खास खुशबू, खास अहसास। सबसे बेहतरीन परफ्यूम्स की दुनिया में आपका स्वागत है!</p>
-            <a href="#products" class="cta-button">Shop Now</a>
-        </div>
-    </section>
-
-    <!-- Products Section -->
-    <section class="products" id="products">
-        <h2 class="section-title">Our Collection</h2>
-        <div class="products-grid">
-            <div class="product-card" onclick="addToCart(1)">
-                <div class="product-image">
-                    <i class="fas fa-spray-can"></i>
-                </div>
-                <div class="product-info">
-                    <div class="product-name">Luxury Noir</div>
-                    <div class="product-price">₹1,499</div>
-                    <div class="product-rating">
-                        <i class="fas fa-star star"></i>
-                        <i class="fas fa-star star"></i>
-                        <i class="fas fa-star star"></i>
-                        <i class="fas fa-star star"></i>
-                        <i class="fas fa-star star"></i>
-                    </div>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-            </div>
-
-            <div class="product-card" onclick="addToCart(2)">
-                <div class="product-image">
-                    <i class="fas fa-gem"></i>
-                </div>
-                <div class="product-info">
-                    <div class="product-name">Eternal Rose</div>
-                    <div class="product-price">₹1,299</div>
-                    <div class="product-rating">
-                        <i class="fas fa-star star"></i>
-                        <i class="fas fa-star star"></i>
-                        <i class="fas fa-star star"></i>
-                        <i class="fas fa-star star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-            </div>
-
-            <div class="product-card" onclick="addToCart(3)">
-                <div class="product-image">
-                    <i class="fas fa-fire"></i>
-                </div>
-                <div class="product-info">
-                    <div class="product-name">Spicy Blaze</div>
-                    <div class="product-price">₹1,799</div>
-                    <div class="product-rating">
-                        <i class="fas fa-star star"></i>
-                        <i class="fas fa-star star"></i>
-                        <i class="fas fa-star star"></i>
-                        <i class="fas fa-star star"></i>
-                        <i class="fas fa-star star"></i>
-                    </div>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-            </div>
-
-            <div class="product-card" onclick="addToCart(4)">
-                <div class="product-image">
-                    <i class="fas fa-leaf"></i>
-                </div>
-                <div class="product-info">
-                    <div class="product-name">Fresh Ocean</div>
-                    <div class="product-price">₹999</div>
-                    <div class="product-rating">
-                        <i class="fas fa-star star"></i>
-                        <i class="fas fa-star star"></i>
-                        <i class="fas fa-star star"></i>
-                        <i class="fas fa-star star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-            </div>
-
-            <div class="product-card" onclick="addToCart(5)">
-                <div class="product-image">
-                    <i class="fas fa-crown"></i>
-                </div>
-                <div class="product-info">
-                    <div class="product-name">Royal Elegance</div>
-                    <div class="product-price">₹2,499</div>
-                    <div class="product-rating">
-                        <i class="fas fa-star star"></i>
-                        <i class="fas fa-star star"></i>
-                        <i class="fas fa-star star"></i>
-                        <i class="fas fa-star star"></i>
-                        <i class="fas fa-star star"></i>
-                    </div>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-            </div>
-
-            <div class="product-card" onclick="addToCart(6)">
-                <div class="product-image">
-                    <i class="fas fa-heart"></i>
-                </div>
-                <div class="product-info">
-                    <div class="product-name">Passion Red</div>
-                    <div class="product-price">₹1,899</div>
-                    <div class="product-rating">
-                        <i class="fas fa-star star"></i>
-                        <i class="fas fa-star star"></i>
-                        <i class="fas fa-star star"></i>
-                        <i class="fas fa-star star"></i>
-                        <i class="fas fa-star star"></i>
-                    </div>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
+    <div class="container">
+        <!-- Main Header -->
+        <div class="header">
+            <h1 class="main-logo">MONEY WIN 247</h1>
+            <p class="tagline">🔥 Working Since 2005 | 100% Genuine & Trusted Platform 🔥</p>
+            
+            <!-- CBTF 777 Center Logo -->
+            <div class="cbtf-hero">
+                <h2>CBTF</h2>
+                <div class="number">777</div>
             </div>
         </div>
-    </section>
 
-    <!-- Cart Modal -->
-    <div class="cart-modal" id="cartModal">
-        <div class="cart-content">
-            <span class="close-cart" onclick="toggleCart()">&times;</span>
-            <h2><i class="fas fa-shopping-cart"></i> Your Cart</h2>
-            <div class="cart-items" id="cartItems"></div>
-            <div class="cart-total" id="cartTotal">Total: ₹0</div>
-            <button class="checkout-btn" onclick="checkout()">Proceed to Checkout</button>
+        <!-- Bonus Features -->
+        <div class="bonuses-grid">
+            <div class="bonus-card">
+                <span class="bonus-icon">🎁</span>
+                <div class="bonus-title">10% Welcome Bonus</div>
+                <div class="bonus-desc">Instant 10% bonus on your first deposit!</div>
+            </div>
+            <div class="bonus-card">
+                <span class="bonus-icon">💎</span>
+                <div class="bonus-title">5% Every Deposit</div>
+                <div class="bonus-desc">Get 5% cashback bonus on EVERY deposit!</div>
+            </div>
+            <div class="bonus-card">
+                <span class="bonus-icon">⚡</span>
+                <div class="bonus-title">24×7 Deposit/Withdrawal</div>
+                <div class="bonus-desc">Instant transactions 24 hours a day!</div>
+            </div>
+            <div class="bonus-card">
+                <span class="bonus-icon">🚀</span>
+                <div class="bonus-title">Very Fast Service</div>
+                <div class="bonus-desc">Lightning fast processing - Money in minutes!</div>
+            </div>
+        </div>
+
+        <!-- WhatsApp Contact Hero -->
+        <div class="whatsapp-hero">
+            <h2>💬 Contact Customer Care Now!</h2>
+            <p style="font-size: 1.3rem; margin-bottom: 30px;">
+                Professional Support | Instant Help | 24×7 Available
+            </p>
+            
+            <a href="https://wa.link/6q8f9i" class="whatsapp-btn" target="_blank">
+                📱 Start WhatsApp Chat
+            </a>
+            
+            <div class="phone-display">📞 +44 7916 691438</div>
+        </div>
+
+        <!-- Trust Badges -->
+        <div class="trust-section">
+            <div class="trust-badge">✅ Since 2005</div>
+            <div class="trust-badge">💯 100% Genuine</div>
+            <div class="trust-badge">⚡ Instant Payout</div>
+            <div class="trust-badge">🌟 Trusted Platform</div>
+            <div class="trust-badge">📈 Proven Results</div>
         </div>
     </div>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div>
-                <h3>Perfume Palace</h3>
-                <p>सबसे बेहतरीन परफ्यूम्स की दुनिया</p>
-            </div>
-            <div>
-                <h4>Contact</h4>
-                <p><i class="fas fa-phone"></i> +91 98765 43210</p>
-                <p><i class="fas fa-envelope"></i> info@perfumepalace.com</p>
-            </div>
-            <div>
-                <h4>Follow Us</h4>
-                <p>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-facebook"></i>
-                    <i class="fab fa-twitter"></i>
-                </p>
-            </div>
-        </div>
-        <p>&copy; 2024 Perfume Palace. All rights reserved.</p>
-    </footer>
-
-    <script>
-        let cart = [];
-
-        // Products data
-        const products = [
-            { id: 1, name: 'Luxury Noir', price: 1499 },
-            { id: 2, name: 'Eternal Rose', price: 1299 },
-            { id: 3, name: 'Spicy Blaze', price: 1799 },
-            { id: 4, name: 'Fresh Ocean', price: 999 },
-            { id: 5, name: 'Royal Elegance', price: 2499 },
-            { id: 6, name: 'Passion Red', price: 1899 }
-        ];
-
-        function addToCart(productId) {
-            const product = products.find(p => p.id === productId);
-            const existingItem = cart.find(item => item.id === productId);
-            
-            if (existingItem) {
-                existingItem.quantity += 1;
-            } else {
-                cart.push({ ...product, quantity: 1 });
-            }
-            
-            updateCartCount();
-            showNotification(`${product.name} added to cart!`);
-        }
-
-        function updateCartCount() {
-            const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
-            document.getElementById('cartCount').textContent = totalItems;
-        }
-
-        function toggleCart() {
-            const modal = document.getElementById('cartModal');
-            modal.style.display = modal.style.display === 'block' ? 'none' : 'block';
-            if (modal.style.display === 'block') {
-                displayCartItems();
-            }
-        }
-
-        function displayCartItems() {
-            const cartItemsDiv = document.getElementById('cartItems');
-            const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-            
-            if (cart.length === 0) {
-                cartItemsDiv.innerHTML =
+</body>
+</html>
