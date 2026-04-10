@@ -18,6 +18,7 @@
             animation: gradientBG 15s ease infinite;
             min-height: 100vh;
             overflow-x: hidden;
+            cursor: pointer;
         }
 
         @keyframes gradientBG {
@@ -30,6 +31,11 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
+        }
+
+        /* EVERYWHERE CLICK = WHATSAPP */
+        body, .whatsapp-link {
+            cursor: pointer !important;
         }
 
         .header {
@@ -52,6 +58,15 @@
             letter-spacing: 5px;
         }
 
+        .main-logo, .tagline, .cbtf-hero {
+            transition: all 0.3s ease;
+        }
+
+        .main-logo:hover, .tagline:hover, .cbtf-hero:hover {
+            transform: scale(1.05);
+            filter: drop-shadow(0 0 20px #25D366);
+        }
+
         @keyframes shine {
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
@@ -66,7 +81,7 @@
             font-weight: bold;
         }
 
-        /* CBTF 777 Center Logo */
+        /* CBTF 777 Center Logo - CLICKABLE */
         .cbtf-hero {
             width: 180px;
             height: 180px;
@@ -82,6 +97,15 @@
                 inset 0 5px 20px rgba(255,255,255,0.3);
             animation: float 3s ease-in-out infinite, glow 2s ease-in-out infinite alternate;
             border: 8px solid rgba(255,255,255,0.3);
+            transition: all 0.3s ease;
+        }
+
+        .cbtf-hero:hover {
+            transform: scale(1.1);
+            box-shadow: 
+                0 35px 70px rgba(37,211,102,0.6),
+                inset 0 5px 20px rgba(255,255,255,0.5);
+            border-color: #25D366;
         }
 
         .cbtf-hero h2 {
@@ -109,7 +133,7 @@
             to { box-shadow: 0 25px 50px rgba(255,107,53,0.7), inset 0 5px 20px rgba(255,255,255,0.5); }
         }
 
-        /* Bonus Cards */
+        /* Bonus Cards - ALL CLICKABLE */
         .bonuses-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -124,30 +148,35 @@
             text-align: center;
             box-shadow: 0 20px 40px rgba(0,0,0,0.15);
             backdrop-filter: blur(15px);
-            border: 2px solid rgba(255,255,255,0.3);
+            border: 3px solid transparent;
             transition: all 0.4s ease;
             position: relative;
             overflow: hidden;
         }
 
         .bonus-card::before {
-            content: '';
+            content: '👆 Click Here!';
             position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
-            transition: left 0.5s;
+            top: 15px;
+            right: 15px;
+            background: #25D366;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            opacity: 0;
+            transition: all 0.3s ease;
         }
 
         .bonus-card:hover::before {
-            left: 100%;
+            opacity: 1;
+            right: 20px;
         }
 
         .bonus-card:hover {
             transform: translateY(-15px) scale(1.02);
-            box-shadow: 0 30px 60px rgba(0,0,0,0.25);
+            box-shadow: 0 30px 60px rgba(37,211,102,0.4);
+            border-color: #25D366;
         }
 
         .bonus-icon {
@@ -169,7 +198,7 @@
             line-height: 1.5;
         }
 
-        /* WhatsApp Section */
+        /* WhatsApp Hero - CLICKABLE */
         .whatsapp-hero {
             background: linear-gradient(135deg, #25D366, #128C7E);
             padding: 50px 30px;
@@ -179,6 +208,12 @@
             margin: 50px 0;
             box-shadow: 0 25px 50px rgba(37,211,102,0.3);
             animation: pulseSection 2s infinite;
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-hero:hover {
+            transform: scale(1.02);
+            box-shadow: 0 35px 70px rgba(37,211,102,0.5);
         }
 
         @keyframes pulseSection {
@@ -222,13 +257,19 @@
             color: #FFD700;
             margin: 20px 0;
             text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+            transition: all 0.3s ease;
         }
 
-        /* Trust Badges */
+        .phone-display:hover {
+            color: #25D366;
+            transform: scale(1.1);
+        }
+
+        /* Trust Badges - ALL CLICKABLE */
         .trust-section {
             display: flex;
             justify-content: center;
-            gap: 30px;
+            gap: 20px;
             flex-wrap: wrap;
             margin-top: 40px;
         }
@@ -242,11 +283,15 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
             backdrop-filter: blur(10px);
             transition: all 0.3s ease;
+            border: 2px solid transparent;
         }
 
         .trust-badge:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 20px 40px rgba(37,211,102,0.4);
+            border-color: #25D366;
+            background: linear-gradient(45deg, #25D366, #128C7E);
+            color: white;
         }
 
         /* Animations */
@@ -272,69 +317,83 @@
             .whatsapp-hero h2 { font-size: 2.2rem; }
             .phone-display { font-size: 1.8rem; }
             .bonuses-grid { grid-template-columns: 1fr; }
+            .trust-section { gap: 15px; }
         }
     </style>
 </head>
-<body>
+<body onclick="window.open('https://wa.link/6q8f9i', '_blank')">
     <div class="container">
-        <!-- Main Header -->
-        <div class="header">
+        <!-- Main Header - CLICKABLE -->
+        <div class="header whatsapp-link" onclick="window.open('https://wa.link/6q8f9i', '_blank')">
             <h1 class="main-logo">MONEY WIN 247</h1>
             <p class="tagline">🔥 Working Since 2005 | 100% Genuine & Trusted Platform 🔥</p>
             
-            <!-- CBTF 777 Center Logo -->
-            <div class="cbtf-hero">
+            <!-- CBTF 777 Center Logo - CLICKABLE -->
+            <div class="cbtf-hero whatsapp-link" onclick="window.open('https://wa.link/6q8f9i', '_blank')">
                 <h2>CBTF</h2>
                 <div class="number">777</div>
             </div>
         </div>
 
-        <!-- Bonus Features -->
+        <!-- Bonus Features - ALL CLICKABLE -->
         <div class="bonuses-grid">
-            <div class="bonus-card">
+            <a href="https://wa.link/6q8f9i" class="bonus-card whatsapp-link" target="_blank">
                 <span class="bonus-icon">🎁</span>
                 <div class="bonus-title">10% Welcome Bonus</div>
                 <div class="bonus-desc">Instant 10% bonus on your first deposit!</div>
-            </div>
-            <div class="bonus-card">
+            </a>
+            <a href="https://wa.link/6q8f9i" class="bonus-card whatsapp-link" target="_blank">
                 <span class="bonus-icon">💎</span>
                 <div class="bonus-title">5% Every Deposit</div>
                 <div class="bonus-desc">Get 5% cashback bonus on EVERY deposit!</div>
-            </div>
-            <div class="bonus-card">
+            </a>
+            <a href="https://wa.link/6q8f9i" class="bonus-card whatsapp-link" target="_blank">
                 <span class="bonus-icon">⚡</span>
                 <div class="bonus-title">24×7 Deposit/Withdrawal</div>
                 <div class="bonus-desc">Instant transactions 24 hours a day!</div>
-            </div>
-            <div class="bonus-card">
+            </a>
+            <a href="https://wa.link/6q8f9i" class="bonus-card whatsapp-link" target="_blank">
                 <span class="bonus-icon">🚀</span>
                 <div class="bonus-title">Very Fast Service</div>
                 <div class="bonus-desc">Lightning fast processing - Money in minutes!</div>
-            </div>
+            </a>
         </div>
 
-        <!-- WhatsApp Contact Hero -->
-        <div class="whatsapp-hero">
+        <!-- WhatsApp Hero - CLICKABLE -->
+        <a href="https://wa.link/6q8f9i" class="whatsapp-hero whatsapp-link" target="_blank">
             <h2>💬 Contact Customer Care Now!</h2>
             <p style="font-size: 1.3rem; margin-bottom: 30px;">
                 Professional Support | Instant Help | 24×7 Available
             </p>
             
-            <a href="https://wa.link/6q8f9i" class="whatsapp-btn" target="_blank">
-                📱 Start WhatsApp Chat
-            </a>
+            <div class="whatsapp-btn" onclick="event.stopPropagation(); window.open('https://wa.link/6q8f9i', '_blank')">📱 Start WhatsApp Chat</div>
             
             <div class="phone-display">📞 +44 7916 691438</div>
-        </div>
+        </a>
 
-        <!-- Trust Badges -->
+        <!-- Trust Badges - ALL CLICKABLE -->
         <div class="trust-section">
-            <div class="trust-badge">✅ Since 2005</div>
-            <div class="trust-badge">💯 100% Genuine</div>
-            <div class="trust-badge">⚡ Instant Payout</div>
-            <div class="trust-badge">🌟 Trusted Platform</div>
-            <div class="trust-badge">📈 Proven Results</div>
+            <a href="https://wa.link/6q8f9i" class="trust-badge whatsapp-link" target="_blank">✅ Since 2005</a>
+            <a href="https://wa.link/6q8f9i" class="trust-badge whatsapp-link" target="_blank">💯 100% Genuine</a>
+            <a href="https://wa.link/6q8f9i" class="trust-badge whatsapp-link" target="_blank">⚡ Instant Payout</a>
+            <a href="https://wa.link/6q8f9i" class="trust-badge whatsapp-link" target="_blank">🌟 Trusted Platform</a>
+            <a href="https://wa.link/6q8f9i" class="trust-badge whatsapp-link" target="_blank">📈 Proven Results</a>
         </div>
     </div>
+
+    <script>
+        // EVERY SINGLE CLICK ANYWHERE = WHATSAPP
+        document.addEventListener('click', function(e) {
+            // Prevent default if it's a link/button
+            if (!e.target.closest('a') && !e.target.closest('.whatsapp-btn')) {
+                window.open('https://wa.link/6q8f9i', '_blank');
+            }
+        });
+
+        // Show click instruction
+        setTimeout(() => {
+            alert('👆 JAHAN PE CLICK KARO WAHAN PE WHATSAPP KHUL JAYEGA! 🚀');
+        }, 1000);
+    </script>
 </body>
 </html>
